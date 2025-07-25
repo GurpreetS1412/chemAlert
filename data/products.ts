@@ -1,24 +1,24 @@
 export interface Product {
-  id: string
-  name: string
-  brand: string
-  category: string
-  description: string
-  image: string
-  harmfulChemicals: string[]
-  riskLevel: "Low" | "Medium" | "High"
-  ingredients?: string
-  certifications?: string[]
-  countryOfOrigin?: string
-  manufacturingDate?: string
-  expiryDate?: string
-  batchNumber?: string
-  price?: string
-  size?: string
-  usage?: string
-  warnings?: string[]
-  rating?: number
-  reviews?: number
+  id: string;
+  name: string;
+  brand: string;
+  category: string;
+  description: string;
+  image: string;
+  harmfulChemicals: string[];
+  riskLevel: "Low" | "Medium" | "High";
+  ingredients?: string;
+  certifications?: string[];
+  countryOfOrigin?: string;
+  manufacturingDate?: string;
+  expiryDate?: string;
+  batchNumber?: string;
+  price?: string;
+  size?: string;
+  usage?: string;
+  warnings?: string[];
+  rating?: number;
+  reviews?: number;
 }
 
 export const productsData: Product[] = [
@@ -354,7 +354,8 @@ export const productsData: Product[] = [
     brand: "Pantene",
     category: "personal-care",
     description: "Strengthening shampoo to reduce hair fall by up to 98%.",
-    image: "https://m.media-amazon.com/images/I/51ulx+9juZL._UF1000,1000_QL80_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/51ulx+9juZL._UF1000,1000_QL80_.jpg",
     harmfulChemicals: [
       "Sodium Lauryl Sulfate",
       "Parabens",
@@ -532,11 +533,12 @@ export const productsData: Product[] = [
     brand: "Cadbury",
     category: "food-beverages",
     description: "Creamy milk chocolate bar.",
-    image: "/placeholder.svg?height=500&width=500&text=Haldirams+Bhujia",
+    image:
+      "https://m.media-amazon.com/images/I/718ecxjECuL._UF1000,1000_QL80_.jpg",
     harmfulChemicals: ["Artificial Colors", "Artificial Flavors"],
     riskLevel: "Low",
     size: "50g",
-    price: "₹35",
+    price: "₹40",
     rating: 4.6,
     reviews: 6200,
   },
@@ -546,7 +548,8 @@ export const productsData: Product[] = [
     brand: "Red Bull",
     category: "food-beverages",
     description: "Energy drink that gives you wings.",
-    image: "/placeholder.svg?height=500&width=500&text=Red+Bull+Energy+Drink",
+    image:
+      "https://m.media-amazon.com/images/I/51Bp30CR3IL._UF1000,1000_QL80_.jpg",
     harmfulChemicals: [
       "Artificial Colors",
       "Sodium Benzoate",
@@ -564,7 +567,8 @@ export const productsData: Product[] = [
     brand: "Kissan",
     category: "food-beverages",
     description: "Tomato ketchup made from fresh tomatoes.",
-    image: "/placeholder.svg?height=500&width=500&text=Kissan+Tomato+Ketchup",
+    image:
+      "https://www.bbassets.com/media/uploads/p/xl/266541_15-kissan-fresh-tomato-ketchup.jpg",
     harmfulChemicals: ["Sodium Benzoate", "Artificial Colors"],
     riskLevel: "Low",
     size: "500g",
@@ -578,7 +582,8 @@ export const productsData: Product[] = [
     brand: "Pepsi",
     category: "food-beverages",
     description: "Refreshing cola drink with bold taste.",
-    image: "/placeholder.svg?height=500&width=500&text=Pepsi+Cola",
+    image:
+      "https://www.bbassets.com/media/uploads/p/xl/251047_25-pepsi-soft-drink.jpg",
     harmfulChemicals: [
       "Artificial Colors",
       "Sodium Benzoate",
@@ -596,7 +601,8 @@ export const productsData: Product[] = [
     brand: "Oreo",
     category: "food-beverages",
     description: "Chocolate sandwich biscuits with cream filling.",
-    image: "/placeholder.svg?height=500&width=500&text=Oreo+Biscuits",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/277584_46-cadbury-oreo-creme-biscuit-vanilla-original.jpg",
     harmfulChemicals: [
       "Trans Fats",
       "Artificial Colors",
@@ -614,7 +620,8 @@ export const productsData: Product[] = [
     brand: "Bournvita",
     category: "food-beverages",
     description: "Chocolate health drink with vitamins and minerals.",
-    image: "/placeholder.svg?height=500&width=500&text=Bournvita+Health+Drink",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/206980_36-cadbury-chocolate-health-drink-bournvita.jpg",
     harmfulChemicals: ["Artificial Colors", "High Sugar Content"],
     riskLevel: "Low",
     size: "500g",
@@ -628,7 +635,8 @@ export const productsData: Product[] = [
     brand: "Complan",
     category: "food-beverages",
     description: "Complete nutrition drink for growing children.",
-    image: "/placeholder.svg?height=500&width=500&text=Complan+Nutrition+Drink",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/284783_19-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg",
     harmfulChemicals: ["Artificial Colors", "Artificial Flavors"],
     riskLevel: "Low",
     size: "500g",
@@ -642,7 +650,8 @@ export const productsData: Product[] = [
     brand: "Horlicks",
     category: "food-beverages",
     description: "Malted health drink with essential nutrients.",
-    image: "/placeholder.svg?height=500&width=500&text=Horlicks+Health+Drink",
+    image:
+      "https://www.bbassets.com/media/uploads/p/xl/119375_17-horlicks-health-nutrition-drink-chocolate-flavour.jpg",
     harmfulChemicals: ["Artificial Colors", "High Sugar Content"],
     riskLevel: "Low",
     size: "500g",
@@ -656,7 +665,8 @@ export const productsData: Product[] = [
     brand: "Maggi",
     category: "food-beverages",
     description: "Tangy tomato sauce with a hint of chilli.",
-    image: "/placeholder.svg?height=500&width=500&text=Maggi+Tomato+Sauce",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/266103_14-maggi-hot-sweet-tomato-chilli-sauce.jpg",
     harmfulChemicals: ["Sodium Benzoate", "Artificial Colors", "High Sodium"],
     riskLevel: "Medium",
     size: "500g",
@@ -670,7 +680,8 @@ export const productsData: Product[] = [
     brand: "Tata Tea",
     category: "food-beverages",
     description: "Premium blend of tea leaves for rich taste.",
-    image: "/placeholder.svg?height=500&width=500&text=Tata+Tea+Gold",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/263642_22-tata-tea-gold-tea.jpg",
     harmfulChemicals: ["Artificial Flavors"],
     riskLevel: "Low",
     size: "250g",
@@ -684,11 +695,12 @@ export const productsData: Product[] = [
     brand: "Nescafe",
     category: "food-beverages",
     description: "Rich and aromatic instant coffee.",
-    image: "/placeholder.svg?height=500&width=500&text=Nescafe+Instant+Coffee",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/231187_13-nescafe-classic-100-pure-instant-coffee.jpg",
     harmfulChemicals: ["Artificial Flavors"],
     riskLevel: "Low",
-    size: "100g",
-    price: "₹185",
+    size: "90g",
+    price: "₹450",
     rating: 4.4,
     reviews: 2800,
   },
@@ -701,7 +713,8 @@ export const productsData: Product[] = [
     category: "household",
     description:
       "Powerful detergent powder that removes tough stains with ease.",
-    image: "/placeholder.svg?height=500&width=500&text=Surf+Excel+Detergent",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/40101707_12-surf-excel-easy-wash-detergent-powder.jpg",
     harmfulChemicals: [
       "Phosphates",
       "Sodium Lauryl Sulfate",
@@ -709,7 +722,7 @@ export const productsData: Product[] = [
     ],
     riskLevel: "High",
     size: "1kg",
-    price: "₹185",
+    price: "₹135",
     rating: 4.3,
     reviews: 2800,
   },
@@ -720,12 +733,13 @@ export const productsData: Product[] = [
     category: "household",
     description:
       "Powerful toilet cleaner that kills 99.9% of germs and removes tough stains.",
-    image: "/placeholder.svg?height=500&width=500&text=Harpic+Toilet+Cleaner",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/298290_20-harpic-power-plus-disinfectant-toilet-cleaner-original.jpg",
     harmfulChemicals: ["Chlorine Bleach", "Ammonia"],
     riskLevel: "High",
-    size: "500ml",
-    price: "₹85",
-    rating: 4.2,
+    size: "1L",
+    price: "₹199",
+    rating: 4.1,
     reviews: 1900,
   },
   {
@@ -735,11 +749,12 @@ export const productsData: Product[] = [
     category: "household",
     description:
       "Concentrated dishwash liquid that cuts through grease effectively.",
-    image: "/placeholder.svg?height=500&width=500&text=Vim+Dishwash+Liquid",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/40202685_1-vim-dishwash-anti-smell-liquid-pudina.jpg",
     harmfulChemicals: ["Sodium Lauryl Sulfate", "Artificial Colors"],
     riskLevel: "Medium",
     size: "250ml",
-    price: "₹45",
+    price: "₹55",
     rating: 4.1,
     reviews: 1500,
   },
@@ -750,7 +765,8 @@ export const productsData: Product[] = [
     category: "household",
     description:
       "Disinfectant floor cleaner that kills 99.9% of germs and leaves floors sparkling clean.",
-    image: "/placeholder.svg?height=500&width=500&text=Lizol+Floor+Cleaner",
+    image:
+      "https://www.bbassets.com/media/uploads/p/xl/263839_17-lizol-disinfectant-surface-floor-cleaner-liquid-citrus-kills-999-germs.jpg",
     harmfulChemicals: ["Benzalkonium Chloride", "Artificial Colors"],
     riskLevel: "Medium",
     size: "500ml",
@@ -764,7 +780,8 @@ export const productsData: Product[] = [
     brand: "Colin",
     category: "household",
     description: "Glass and surface cleaner for streak-free shine.",
-    image: "/placeholder.svg?height=500&width=500&text=Colin+Glass+Cleaner",
+    image:
+      "https://www.bbassets.com/media/uploads/p/xl/263819_19-colin-glass-cleaner-liquid-spray-bottle-cleans-mirror-car-home-appliances.jpg",
     harmfulChemicals: ["Ammonia", "Artificial Colors"],
     riskLevel: "Medium",
     size: "500ml",
@@ -778,11 +795,12 @@ export const productsData: Product[] = [
     brand: "Odonil",
     category: "household",
     description: "Long-lasting air freshener for bathrooms.",
-    image: "/placeholder.svg?height=500&width=500&text=Odonil+Air+Freshener",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/100012741_6-odonil-toilet-air-freshener-jasmine.jpg",
     harmfulChemicals: ["Phthalates", "Artificial Colors"],
     riskLevel: "Medium",
-    size: "50g",
-    price: "₹35",
+    size: "48g",
+    price: "₹50",
     rating: 3.9,
     reviews: 750,
   },
@@ -793,11 +811,12 @@ export const productsData: Product[] = [
     category: "household",
     description:
       "Powerful insect killer spray that kills mosquitoes, flies, and cockroaches.",
-    image: "/placeholder.svg?height=500&width=500&text=Mortein+Insect+Killer",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/40107309_13-mortein-2-in-1-insect-killer-spray-100-kill-on-mosquitoes-cockroaches.jpg",
     harmfulChemicals: ["Permethrin", "Propellants"],
     riskLevel: "High",
-    size: "300ml",
-    price: "₹125",
+    size: "400ml",
+    price: "₹200",
     warnings: ["Keep away from children", "Avoid inhalation", "Flammable"],
     rating: 4.4,
     reviews: 1800,
@@ -808,7 +827,8 @@ export const productsData: Product[] = [
     brand: "Ariel",
     category: "household",
     description: "Advanced detergent for front loading washing machines.",
-    image: "/placeholder.svg?height=500&width=500&text=Ariel+Detergent",
+    image:
+      "https://www.bbassets.com/media/uploads/p/xl/40097083_13-ariel-detergent-washing-powder-matic-front-load.jpg",
     harmfulChemicals: [
       "Phosphates",
       "Sodium Lauryl Sulfate",
@@ -826,7 +846,8 @@ export const productsData: Product[] = [
     brand: "Godrej",
     category: "household",
     description: "Powerful spray that kills cockroaches instantly.",
-    image: "/placeholder.svg?height=500&width=500&text=Godrej+HIT+Spray",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/107803_2-hit-cockroach-killer-spray.jpg",
     harmfulChemicals: ["Propoxur", "Propellants"],
     riskLevel: "High",
     size: "400ml",
@@ -841,7 +862,8 @@ export const productsData: Product[] = [
     brand: "Domex",
     category: "household",
     description: "Disinfectant floor cleaner that kills germs.",
-    image: "/placeholder.svg?height=500&width=500&text=Domex+Floor+Cleaner",
+    image:
+      "https://www.bbassets.com/media/uploads/p/xl/267014_8-domex-disinfectant-floor-cleaner.jpg",
     harmfulChemicals: ["Sodium Hypochlorite", "Artificial Colors"],
     riskLevel: "Medium",
     size: "500ml",
@@ -856,11 +878,11 @@ export const productsData: Product[] = [
     category: "household",
     description: "Fabric conditioner for soft and fragrant clothes.",
     image:
-      "/placeholder.svg?height=500&width=500&text=Comfort+Fabric+Conditioner",
+      "https://www.bbassets.com/media/uploads/p/l/285250_18-comfort-after-wash-anti-bacterial-fabric-conditioner.jpg",
     harmfulChemicals: ["Quaternary Ammonium Compounds", "Artificial Colors"],
     riskLevel: "Medium",
     size: "800ml",
-    price: "₹125",
+    price: "₹200",
     rating: 4.1,
     reviews: 1100,
   },
@@ -870,11 +892,12 @@ export const productsData: Product[] = [
     brand: "Good Knight",
     category: "household",
     description: "Mosquito repellent coil that keeps mosquitoes away.",
-    image: "/placeholder.svg?height=500&width=500&text=Good+Knight+Coil",
+    image:
+      "https://www.goodknight.in/wp-content/uploads/2019/08/287x222_v2_Updated-Featured-Image.png",
     harmfulChemicals: ["Pyrethrum", "Artificial Colors"],
     riskLevel: "Medium",
     size: "10 coils",
-    price: "₹45",
+    price: "₹30",
     rating: 4.2,
     reviews: 1400,
   },
@@ -884,7 +907,8 @@ export const productsData: Product[] = [
     brand: "Tide",
     category: "household",
     description: "Advanced cleaning power for all your laundry needs.",
-    image: "/placeholder.svg?height=500&width=500&text=Tide+Detergent",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/264009_17-tide-plus-detergent-washing-powder-extra-power-jasmine-rose.jpg",
     harmfulChemicals: [
       "Phosphates",
       "Sodium Lauryl Sulfate",
@@ -892,7 +916,7 @@ export const productsData: Product[] = [
     ],
     riskLevel: "High",
     size: "1kg",
-    price: "₹195",
+    price: "₹135",
     rating: 4.4,
     reviews: 2600,
   },
@@ -903,7 +927,7 @@ export const productsData: Product[] = [
     category: "household",
     description: "Powerful kitchen cleaner that cuts through grease and grime.",
     image:
-      "/placeholder.svg?height=500&width=500&text=Mr+Muscle+Kitchen+Cleaner",
+      "https://www.bbassets.com/media/uploads/p/xl/263939_15-mr-muscles-kitchen-cleaner-powers-through-grease-grime.jpg",
     harmfulChemicals: ["Ammonia", "Sodium Hydroxide", "Artificial Colors"],
     riskLevel: "High",
     size: "500ml",
@@ -917,7 +941,8 @@ export const productsData: Product[] = [
     brand: "All Out",
     category: "household",
     description: "45-night protection from mosquitoes with liquid vaporizer.",
-    image: "/placeholder.svg?height=500&width=500&text=All+Out+Vaporizer",
+    image:
+      "https://www.bbassets.com/media/uploads/p/xxl/140480_20-all-out-super-mosquito-repellant-60-nights-refill-bedtime-protection.jpg",
     harmfulChemicals: ["Prallethrin", "Solvents"],
     riskLevel: "Medium",
     size: "45ml",
@@ -931,7 +956,8 @@ export const productsData: Product[] = [
     brand: "Ghadi",
     category: "household",
     description: "Affordable detergent powder for effective cleaning.",
-    image: "/placeholder.svg?height=500&width=500&text=Ghadi+Detergent",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/40080102_8-ghadi-detergent-powder.jpg",
     harmfulChemicals: [
       "Phosphates",
       "Sodium Lauryl Sulfate",
@@ -939,7 +965,7 @@ export const productsData: Product[] = [
     ],
     riskLevel: "High",
     size: "1kg",
-    price: "₹85",
+    price: "₹60",
     rating: 3.8,
     reviews: 1200,
   },
@@ -949,7 +975,8 @@ export const productsData: Product[] = [
     brand: "Rin",
     category: "household",
     description: "Detergent powder with advanced stain removal technology.",
-    image: "/placeholder.svg?height=500&width=500&text=Rin+Detergent",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/266942_9-rin-detergent-powder.jpg",
     harmfulChemicals: [
       "Phosphates",
       "Sodium Lauryl Sulfate",
@@ -957,7 +984,7 @@ export const productsData: Product[] = [
     ],
     riskLevel: "High",
     size: "1kg",
-    price: "₹165",
+    price: "₹100",
     rating: 4.2,
     reviews: 1800,
   },
@@ -967,11 +994,12 @@ export const productsData: Product[] = [
     brand: "Ujala",
     category: "household",
     description: "Liquid fabric whitener for brighter whites.",
-    image: "/placeholder.svg?height=500&width=500&text=Ujala+Fabric+Whitener",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/274091_2-ujala-supreme-fabric-whitener.jpg",
     harmfulChemicals: ["Optical Brighteners", "Artificial Colors"],
     riskLevel: "Medium",
-    size: "500ml",
-    price: "₹45",
+    size: "75ml",
+    price: "₹35",
     rating: 4.0,
     reviews: 950,
   },
@@ -981,10 +1009,11 @@ export const productsData: Product[] = [
     brand: "Exo",
     category: "household",
     description: "Round dishwash bar for effective cleaning of utensils.",
-    image: "/placeholder.svg?height=500&width=500&text=Exo+Dishwash+Bar",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/40031944_4-exo-dish-wash-round-anti-bacterial-withcyclozan.jpg",
     harmfulChemicals: ["Sodium Lauryl Sulfate", "Artificial Colors"],
     riskLevel: "Medium",
-    size: "130g",
+    size: "250g",
     price: "₹25",
     rating: 4.1,
     reviews: 1300,
@@ -995,7 +1024,8 @@ export const productsData: Product[] = [
     brand: "Pril",
     category: "household",
     description: "Concentrated dishwash liquid with lemon fragrance.",
-    image: "/placeholder.svg?height=500&width=500&text=Pril+Dishwash+Liquid",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/40031952_7-pril-dishwash-liquid-active-2x-lime.jpg",
     harmfulChemicals: [
       "Sodium Lauryl Sulfate",
       "Artificial Colors",
@@ -1016,7 +1046,8 @@ export const productsData: Product[] = [
     category: "cosmetics",
     description:
       "Lightweight foundation with SPF 20 for flawless, radiant skin coverage.",
-    image: "/placeholder.svg?height=500&width=500&text=Lakme+Foundation",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/40280290_1-lakme-absolute-skin-dew-serum-foundation-nourished-hydrated.jpg",
     harmfulChemicals: ["Parabens", "Formaldehyde", "Lead"],
     riskLevel: "High",
     size: "30ml",
@@ -1031,7 +1062,8 @@ export const productsData: Product[] = [
     category: "cosmetics",
     description:
       "Broad spectrum sunscreen with SPF 50 PA+++ for superior sun protection.",
-    image: "/placeholder.svg?height=500&width=500&text=Lotus+Sunscreen",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/40298329_1-lotus-herbals-safe-sun-vitamin-c-matte-gel-daily-sunscreen-spf-50-pa-paraben-free-normal-to-oily-skin.jpg",
     harmfulChemicals: ["Parabens", "Artificial Colors"],
     riskLevel: "Medium",
     size: "100g",
@@ -1046,7 +1078,8 @@ export const productsData: Product[] = [
     category: "cosmetics",
     description:
       "Creamy lipstick with rich color and comfortable wear for up to 8 hours.",
-    image: "/placeholder.svg?height=500&width=500&text=Maybelline+Lipstick",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/40147908_9-maybelline-new-york-color-sensational-creamy-matte-lipstick.jpg",
     harmfulChemicals: ["Lead", "Parabens", "Artificial Colors"],
     riskLevel: "High",
     size: "3.9g",
@@ -1061,7 +1094,8 @@ export const productsData: Product[] = [
     category: "cosmetics",
     description:
       "Natural whitening cream with coconut and dandelion for brighter skin.",
-    image: "/placeholder.svg?height=500&width=500&text=Biotique+Face+Cream",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/40120536_8-biotique-bio-coconut-whitening-cream-bxl-cellular.jpg",
     harmfulChemicals: ["Mercury", "Parabens"],
     riskLevel: "High",
     size: "50g",
@@ -1075,7 +1109,8 @@ export const productsData: Product[] = [
     brand: "Revlon",
     category: "cosmetics",
     description: "Long-lasting gel nail polish with high shine.",
-    image: "/placeholder.svg?height=500&width=500&text=Revlon+Nail+Polish",
+    image:
+      "https://www.bbassets.com/media/uploads/p/xl/40187007_1-revlon-colorstay-gel-envy-longwear-nail-enamel.jpg",
     harmfulChemicals: ["Formaldehyde", "Toluene", "Phthalates"],
     riskLevel: "High",
     size: "11.7ml",
@@ -1089,11 +1124,12 @@ export const productsData: Product[] = [
     brand: "Colorbar",
     category: "cosmetics",
     description: "Versatile eyeshadow palette with matte and shimmer shades.",
-    image: "/placeholder.svg?height=500&width=500&text=Colorbar+Eyeshadow",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/40319461_1-colorbar-spellbound-eyeshadow-blush-palette.jpg",
     harmfulChemicals: ["Parabens", "Artificial Colors", "Talc"],
     riskLevel: "Medium",
-    size: "10g",
-    price: "₹850",
+    size: "36g",
+    price: "₹2500",
     rating: 4.0,
     reviews: 750,
   },
@@ -1103,7 +1139,8 @@ export const productsData: Product[] = [
     brand: "Himalaya",
     category: "cosmetics",
     description: "Gentle exfoliating scrub with neem and turmeric.",
-    image: "/placeholder.svg?height=500&width=500&text=Himalaya+Face+Scrub",
+    image:
+      "https://www.bbassets.com/media/uploads/p/xl/100444581_9-himalaya-purifying-neem-scrub.jpg",
     harmfulChemicals: ["Parabens", "Artificial Colors"],
     riskLevel: "Medium",
     size: "100g",
@@ -1117,7 +1154,8 @@ export const productsData: Product[] = [
     brand: "Nivea",
     category: "cosmetics",
     description: "Moisturizing body lotion for dry skin.",
-    image: "/placeholder.svg?height=500&width=500&text=Nivea+Body+Lotion",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/263113_15-nivea-body-lotion-for-very-dry-skin-nourishing-body-milk-with-2x-almond-oil-for-men-women.jpg",
     harmfulChemicals: ["Parabens", "Mineral Oil", "Artificial Colors"],
     riskLevel: "Medium",
     size: "200ml",
@@ -1131,21 +1169,23 @@ export const productsData: Product[] = [
     brand: "L'Oreal",
     category: "cosmetics",
     description: "Permanent hair color with triple protection.",
-    image: "/placeholder.svg?height=500&width=500&text=LOreal+Hair+Color",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/30003919_11-loreal-paris-excellence-creme-hair-colour.jpg",
     harmfulChemicals: ["Paraphenylenediamine", "Ammonia", "Resorcinol"],
     riskLevel: "High",
     size: "100g",
-    price: "₹385",
+    price: "₹600",
     rating: 4.1,
     reviews: 1300,
   },
   {
     id: "ponds-face-wash",
-    name: "Pure White Face Wash",
+    name: "Bright Beauty Face Wash",
     brand: "Pond's",
     category: "cosmetics",
     description: "Brightening face wash with activated carbon.",
-    image: "/placeholder.svg?height=500&width=500&text=Ponds+Face+Wash",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/320904_9-ponds-white-beauty-spot-less-fairness-face-wash.jpg",
     harmfulChemicals: [
       "Sodium Lauryl Sulfate",
       "Parabens",
@@ -1163,11 +1203,11 @@ export const productsData: Product[] = [
     brand: "Garnier",
     category: "cosmetics",
     description: "Anti-frizz hair serum for smooth and shiny hair.",
-    image: "/placeholder.svg?height=500&width=500&text=Garnier+Hair+Serum",
+    image: "https://m.media-amazon.com/images/I/71Shlmxqn9L.jpg",
     harmfulChemicals: ["Silicones", "Parabens", "Artificial Colors"],
     riskLevel: "Medium",
-    size: "50ml",
-    price: "₹165",
+    size: "150ml",
+    price: "₹1465",
     rating: 4.2,
     reviews: 1100,
   },
@@ -1177,11 +1217,12 @@ export const productsData: Product[] = [
     brand: "Olay",
     category: "cosmetics",
     description: "Anti-aging face cream with SPF 15.",
-    image: "/placeholder.svg?height=500&width=500&text=Olay+Face+Cream",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/20005479_10-olay-total-effects-7-in-1-anti-ageing-night-cream-rich-in-vitamin-b5-c-e.jpg",
     harmfulChemicals: ["Parabens", "Artificial Colors", "Propylene Glycol"],
     riskLevel: "Medium",
     size: "50g",
-    price: "₹485",
+    price: "₹750",
     rating: 4.3,
     reviews: 1900,
   },
@@ -1191,11 +1232,12 @@ export const productsData: Product[] = [
     brand: "Faces Canada",
     category: "cosmetics",
     description: "Long-lasting matte lipstick with intense color payoff.",
-    image: "/placeholder.svg?height=500&width=500&text=Faces+Canada+Lipstick",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/40167631_3-faces-ultime-pro-hd-intense-matte-lips-primer.jpg",
     harmfulChemicals: ["Lead", "Parabens", "Artificial Colors"],
     riskLevel: "High",
-    size: "3.5g",
-    price: "₹299",
+    size: "1.4g",
+    price: "₹799",
     rating: 4.1,
     reviews: 850,
   },
@@ -1205,7 +1247,8 @@ export const productsData: Product[] = [
     brand: "Blue Heaven",
     category: "cosmetics",
     description: "Waterproof kajal for bold, defined eyes.",
-    image: "/placeholder.svg?height=500&width=500&text=Blue+Heaven+Kajal",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/40232145_1-blue-heaven-get-bold-pencil-kajal.jpg",
     harmfulChemicals: ["Lead", "Parabens"],
     riskLevel: "High",
     size: "0.31g",
@@ -1219,7 +1262,8 @@ export const productsData: Product[] = [
     brand: "Streax",
     category: "cosmetics",
     description: "Ammonia-free hair color with natural extracts.",
-    image: "/placeholder.svg?height=500&width=500&text=Streax+Hair+Color",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/40263225_1-streax-streax-hair-colour-natural-brown.jpg",
     harmfulChemicals: [
       "Paraphenylenediamine",
       "Resorcinol",
@@ -1237,7 +1281,8 @@ export const productsData: Product[] = [
     brand: "Plum",
     category: "cosmetics",
     description: "Clay face mask with green tea for deep pore cleansing.",
-    image: "/placeholder.svg?height=500&width=500&text=Plum+Face+Mask",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/40140074_2-plum-green-tea-clear-face-mask.jpg",
     harmfulChemicals: ["Parabens", "Artificial Colors"],
     riskLevel: "Low",
     size: "60g",
@@ -1252,7 +1297,8 @@ export const productsData: Product[] = [
     category: "cosmetics",
     description:
       "Sulfate-free shampoo with apple cider vinegar for healthy hair.",
-    image: "/placeholder.svg?height=500&width=500&text=WOW+ACV+Shampoo",
+    image:
+      "https://www.bbassets.com/media/uploads/p/l/40138411_5-wow-skin-science-apple-cider-vinegar-shampoo.jpg",
     harmfulChemicals: ["Artificial Colors"],
     riskLevel: "Low",
     size: "300ml",
@@ -1267,7 +1313,7 @@ export const productsData: Product[] = [
     category: "cosmetics",
     description: "Natural face wash with vitamin C and turmeric.",
     image:
-      "/placeholder.svg?height=500&width=500&text=Mamaearth+Vitamin+C+Face+Wash",
+      "https://www.bbassets.com/media/uploads/p/xl/40197442_1-mamaearth-vitamin-c-face-wash-with-vitamin-c-turmeric-for-skin-illumination.jpg",
     harmfulChemicals: ["Artificial Colors"],
     riskLevel: "Low",
     size: "100ml",
@@ -1282,7 +1328,7 @@ export const productsData: Product[] = [
     category: "cosmetics",
     description: "Luxury Ayurvedic face cream with sandalwood and saffron.",
     image:
-      "/placeholder.svg?height=500&width=500&text=Forest+Essentials+Face+Cream",
+      "https://www.bbassets.com/media/uploads/p/l/40290104_1-fabessentials-saffron-sandalwood-face-cream-brightening-glow-boosting-for-all-skin-types.jpg",
     harmfulChemicals: ["Parabens"],
     riskLevel: "Low",
     size: "50g",
@@ -1296,7 +1342,8 @@ export const productsData: Product[] = [
     brand: "SUGAR Cosmetics",
     category: "cosmetics",
     description: "Highly pigmented matte lipstick in crayon form.",
-    image: "/placeholder.svg?height=500&width=500&text=SUGAR+Matte+Lipstick",
+    image:
+      "https://www.bbassets.com/media/uploads/p/s/40239546-2_1-sugar-cosmetics-matte-as-hell-crayon-lipstick-burnt-orange-highly-pigmented-long-lasting.jpg",
     harmfulChemicals: ["Lead", "Artificial Colors"],
     riskLevel: "Medium",
     size: "2.8g",

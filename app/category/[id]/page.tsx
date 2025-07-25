@@ -24,9 +24,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const categoryName = categoryNames[id] || "Products"
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className=" shadow-sm  border-b-2 border-gray-500 text-orange-200 sticky top-0 dark:bg-gray-900  backdrop-filter backdrop-blur-lg bg-opacity-30 z-50">
+      <header className=" shadow-sm  border-b border-border text-orange-200 sticky top-0   backdrop-filter backdrop-blur-lg bg-opacity-30 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center gap-4">
             <Link href="/">
@@ -37,16 +37,18 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             </Link>
             <div className="flex items-center gap-3">
               <AlertTriangle className="h-6 w-6 text-red-600" />
-              <h1 className="text-xl font-bold text-white">ChemAlert India</h1>
+              <h1 className="text-xl font-bold text-primary">
+                ChemAlert India
+              </h1>
             </div>
           </div>
         </div>
       </header>
 
       {/* Category Header */}
-      <section className="py-8 px-4 bg-black border-b">
+      <section className="py-8 px-4 border-b">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold text-gray-100 mb-2">
+          <h2 className="text-3xl font-bold text-primary mb-2">
             {categoryName}
           </h2>
           <p className="text-gray-700">
