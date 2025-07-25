@@ -70,26 +70,26 @@ export default function AboutPage() {
 
   const team = [
     {
-      name: "Dr. Priya Sharma",
-      role: "Chemical Safety Expert",
-      description: "PhD in Chemistry with 15+ years in product safety research.",
+      name: "Bhuvesh Sharma",
+      role: "Safety Research",
+      description: "class XI B",
     },
     {
-      name: "Rajesh Kumar",
-      role: "Data Scientist",
-      description: "Specializes in chemical database management and analysis algorithms.",
+      name: "Gurpreeet Singh",
+      role: "Design Lead",
+      description: "class XI B",
     },
     {
-      name: "Anita Patel",
-      role: "Public Health Advocate",
-      description: "MPH with focus on consumer health and safety awareness campaigns.",
+      name: "Harman Vaglay",
+      role: "Product data research",
+      description: "class XI B",
     },
     {
-      name: "Vikram Singh",
+      name: "Apurv Sikka",
       role: "Technology Lead",
-      description: "Full-stack developer ensuring platform reliability and user experience.",
+      description: "class XI B",
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen flex flex-col">

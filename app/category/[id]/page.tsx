@@ -24,9 +24,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const categoryName = categoryNames[id] || "Products"
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-black">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b">
+      <header className=" shadow-sm  border-b-2 border-gray-500 text-orange-200 sticky top-0 dark:bg-gray-900  backdrop-filter backdrop-blur-lg bg-opacity-30 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center gap-4">
             <Link href="/">
@@ -37,17 +37,21 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             </Link>
             <div className="flex items-center gap-3">
               <AlertTriangle className="h-6 w-6 text-red-600" />
-              <h1 className="text-xl font-bold text-gray-900">ChemAlert India</h1>
+              <h1 className="text-xl font-bold text-white">ChemAlert India</h1>
             </div>
           </div>
         </div>
       </header>
 
       {/* Category Header */}
-      <section className="py-8 px-4 bg-white border-b">
+      <section className="py-8 px-4 bg-black border-b">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">{categoryName}</h2>
-          <p className="text-gray-600">{categoryProducts.length} products analyzed for harmful chemicals</p>
+          <h2 className="text-3xl font-bold text-gray-100 mb-2">
+            {categoryName}
+          </h2>
+          <p className="text-gray-700">
+            {categoryProducts.length} products analyzed for harmful chemicals
+          </p>
         </div>
       </section>
 
@@ -56,26 +60,36 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {categoryProducts.map((product) => (
-              <Card key={product.id} className="hover:shadow-lg transition-shadow">
+              <Card
+                key={product.id}
+                className="hover:shadow-lg transition-shadow">
                 <CardHeader className="pb-4">
                   <div className="aspect-square relative mb-4 bg-gray-100 rounded-lg overflow-hidden">
-                    <Image src={product.image || "/placeholder.svg"} alt={product.name} fill className="object-cover" />
+                    <Image
+                      src={product.image || "/placeholder.svg"}
+                      alt={product.name}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                   <div className="flex justify-between items-start gap-2">
                     <div>
-                      <CardTitle className="text-lg leading-tight">{product.name}</CardTitle>
-                      <CardDescription className="text-sm font-medium text-blue-600">{product.brand}</CardDescription>
+                      <CardTitle className="text-lg leading-tight">
+                        {product.name}
+                      </CardTitle>
+                      <CardDescription className="text-sm font-medium text-blue-600">
+                        {product.brand}
+                      </CardDescription>
                     </div>
                     <Badge
                       variant={
                         product.riskLevel === "High"
                           ? "destructive"
                           : product.riskLevel === "Medium"
-                            ? "secondary"
-                            : "outline"
+                          ? "secondary"
+                          : "outline"
                       }
-                      className="text-xs shrink-0"
-                    >
+                      className="text-xs shrink-0">
                       {product.riskLevel}
                     </Badge>
                   </div>
@@ -83,13 +97,20 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                 <CardContent className="pt-0">
                   <div className="space-y-3">
                     <div>
-                      <h4 className="font-medium text-sm text-gray-900 mb-2">Harmful Chemicals Found:</h4>
+                      <h4 className="font-medium text-sm text-gray-900 mb-2">
+                        Harmful Chemicals Found:
+                      </h4>
                       <div className="flex flex-wrap gap-1">
-                        {product.harmfulChemicals.slice(0, 3).map((chemical, index) => (
-                          <Badge key={index} variant="outline" className="text-xs">
-                            {chemical}
-                          </Badge>
-                        ))}
+                        {product.harmfulChemicals
+                          .slice(0, 3)
+                          .map((chemical, index) => (
+                            <Badge
+                              key={index}
+                              variant="outline"
+                              className="text-xs">
+                              {chemical}
+                            </Badge>
+                          ))}
                         {product.harmfulChemicals.length > 3 && (
                           <Badge variant="outline" className="text-xs">
                             +{product.harmfulChemicals.length - 3} more
@@ -111,5 +132,5 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         </div>
       </section>
     </div>
-  )
+  );
 }
