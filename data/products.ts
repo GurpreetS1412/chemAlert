@@ -455,7 +455,7 @@ export const productsData: Product[] = [
     brand: "Cadbury",
     category: "food-beverages",
     description: "Creamy milk chocolate bar.",
-    image: "",
+    image:"/placeholder.svg?height=500&width=500&text=Haldirams+Bhujia",
     harmfulChemicals: ["Artificial Colors", "Artificial Flavors"],
     riskLevel: "Low",
     size: "50g",
